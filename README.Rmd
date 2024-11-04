@@ -1,0 +1,6 @@
+---
+title: Data 550 Group 9 Midterm: F57 Report
+author: Arnetta McVey Moffatt, Danyang Chen, Iris Cho, Xintian Song, Yu-Jou Li
+output: github_document
+---
+
