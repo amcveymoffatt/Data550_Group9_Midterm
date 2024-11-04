@@ -1,9 +1,9 @@
-Data 550 Group 9 Midterm: F57 Report
+Group 9 Midterm: F57 Milk
 ================
 Arnetta McVey Moffatt, Danyang Chen, Iris Cho, Xintian Song, and Yu-Jou
 Li
 
-# F57 Analysis
+### Report Overview
 
 Children with medically complicated severe acute malnutrition (SAM) face
 a high risk of inpatient mortality. Factors such as diarrhea,
@@ -15,6 +15,7 @@ these risks, potentially reducing the duration of the stabilization
 phase.
 
 This project aims to replicate part of the analysis published in the
-article *A reduced-carbohydrate and lactose-free formulation for
+article *[A reduced-carbohydrate and lactose-free formulation for
 stabilization among hospitalized children with severe acute
-malnutrition: A double-blind, randomized controlled trial.*
+malnutrition: A double-blind, randomized controlled
+trial.](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002747)*
