@@ -1,5 +1,6 @@
 Output/*.Rds
 Output/*.pdf
 Output/*.jpeg
+Data/*.csv
 *.html
 .DS_Store
