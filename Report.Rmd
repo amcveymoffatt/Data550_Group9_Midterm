@@ -11,13 +11,10 @@ knitr:
 ---
 
 ```{r, set-chunk-opts, echo = FALSE}
-library(knitr)
-opts_chunk$set(
-  echo = FALSE,  
-  warning = FALSE, 
-  message = FALSE
+library(knitr)opts_chunk$set(echo = FALSE,  warning = FALSE, message = FALSE
 )
 ```
+
 
 # Introduction
 
@@ -36,7 +33,7 @@ print(baseline)
 
 # Primary Outcome
 
--   The primary outcome is time to *clinical stabilization among malnutrition infants, in which clinical stabalizaiton refres to a child can progressing to higher protein and energy feeds to promote catch-up growth.*
+-   The primary outcome is time to *clinical stabilization among malnutrition infants, in which clinical stabilization refers to a child can progressing to higher protein and energy feeds to promote catch-up growth.*
 
 -   Within 512 patients, 453 infants reach clinical stabilization, and rest of them died before censoring.
 
@@ -51,5 +48,4 @@ readRDS(here::here("Output/primary_outcome.rds"))
 
 ```{r}
 knitr::include_graphics(here::here("Output/bar.png"))
-
 ```

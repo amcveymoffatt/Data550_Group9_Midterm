@@ -1,6 +1,5 @@
 rm(list = ls())
 
-if(!require("pacman")) install.packages("pacman")
 pacman::p_load(
   here, DescTools, tidyverse, magrittr, janitor,
   knitr, survival, ggpubr, gt, gtsummary
@@ -12,7 +11,7 @@ here::i_am(
 )
 
 
-f75 <- readRDS(here::here("data/f75.rds"))
+f75 <- readRDS(here::here("Data/f75.rds"))
 
 ## assume the censoring day is 10 day from birth 
 f75 %<>%
