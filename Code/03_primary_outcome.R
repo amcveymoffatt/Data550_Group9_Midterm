@@ -12,7 +12,7 @@ here::i_am(
 )
 
 
-f75 <- readRDS(here::here("data/intermediate/f75.rds"))
+f75 <- readRDS(here::here("data/f75.rds"))
 
 ## assume the censoring day is 10 day from birth 
 f75 %<>%
