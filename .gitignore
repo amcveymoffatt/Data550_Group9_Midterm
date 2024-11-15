@@ -5,3 +5,4 @@ Output/*.png
 Data/*.Rds
 *.html
 .DS_Store
+.Rhistory

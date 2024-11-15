@@ -30,7 +30,8 @@ opts_chunk$set(
 # Baseline Table
 
 ```{r}
-
+baseline <- readRDS(here::here("Output/Baseline_characteristics.rds"))
+print(baseline)
 ```
 
 # Primary Outcome
@@ -43,6 +44,7 @@ opts_chunk$set(
 
 ```{r}
 readRDS(here::here("Output/primary_outcome.rds"))
+
 ```
 
 # Secondary Outcome

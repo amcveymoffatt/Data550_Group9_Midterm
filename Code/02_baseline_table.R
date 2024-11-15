@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-f75 <- read.csv("f75_interim.csv")
+f75 <- read.csv("Data/f75_interim.csv")
 
 # Demographic
 Demographics <- f75 %>%
@@ -201,3 +201,6 @@ Baseline_characteristics <- rbind(Demographics, Age_in_months, Female, Primary_c
 
 print(Baseline_characteristics)
 
+
+
+saveRDS(Baseline_characteristics, here::here("Output/Baseline_characteristics.rds"))
