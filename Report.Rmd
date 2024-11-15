@@ -48,5 +48,6 @@ readRDS(here::here("Output/primary_outcome.rds"))
 # Secondary Outcome
 
 ```{r}
+knitr::include_graphics(here::here("Output/bar.png"))
 
 ```

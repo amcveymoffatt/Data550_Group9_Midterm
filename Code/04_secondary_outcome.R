@@ -2,10 +2,10 @@ library(here)
 library(ggplot2)
 
 here::i_am(
-  "Code/04_weight_diff.R"
+  "Code/04_secondary_outcome.R"
 )
 
-data <- read.csv(here::here("f75_interim.csv"))
+data <- read.csv(here::here("Data/f75_interim.csv"))
 
 wilcox.test(weight ~ arm, data = data)
 
