@@ -1,4 +1,4 @@
-Group 9 Midterm: F57 Milk
+Group 9 Midterm: F75 Milk
 ================
 Arnetta McVey Moffatt, Danyang Chen, Iris Cho, Xintian Song, and Yu-Jou
 Li
@@ -15,7 +15,8 @@ these risks, potentially reducing the duration of the stabilization
 phase.
 
 This project aims to replicate part of the analysis published in the
-article *[A reduced-carbohydrate and lactose-free formulation for
+article *A reduced-carbohydrate and lactose-free formulation for
 stabilization among hospitalized children with severe acute
-malnutrition: A double-blind, randomized controlled
-trial.](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002747)*
+malnutrition: A double-blind, randomized controlled trial.*
+
+### Instructions for Running Report
