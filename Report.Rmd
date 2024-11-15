@@ -1,0 +1,53 @@
+---
+title: "Midterm Project"
+author: ""
+date: "`r Sys.Date()`"
+knitr:
+  opts_chunk:
+    fig.align: center
+    fig.height: 5
+    fig.width: 7
+    results: markup
+---
+
+```{r, set-chunk-opts, echo = FALSE}
+library(knitr)
+opts_chunk$set(
+  echo = FALSE,  
+  warning = FALSE, 
+  message = FALSE
+)
+```
+
+# Introduction
+
+-   This is a RCT aims to compare mF75 with *currently recommended formulation of F75 among hospitalized children with SAM (Severe Malnutrition) in Kenya, Africa.*
+
+-   *`arm1`: F75 was designed to meet the estimated nutritional requirements to restore physiological and metabolic functions and to prevent refeeding syndrome while medical conditions stabilize*
+
+-   `arm2`: mF75(*modified F75 formula), with substantially reduced carbohydrate content and without lactose*
+
+# Baseline Table
+
+```{r}
+
+```
+
+# Primary Outcome
+
+-   The primary outcome is time to *clinical stabilization among malnutrition infants, in which clinical stabalizaiton refres to a child can progressing to higher protein and energy feeds to promote catch-up growth.*
+
+-   Within 512 patients, 453 infants reach clinical stabilization, and rest of them died before censoring.
+
+-   The Hazard Ratio is adjusted by site, gender and and breastfeeding status, but found no statistical significant in the time to clinical stabilization between two arms.
+
+```{r}
+readRDS(here::here("Output/primary_outcome.rds"))
+```
+
+# Secondary Outcome
+
+```{r}
+knitr::include_graphics(here::here("Output/bar.png"))
+
+```
