@@ -12,6 +12,7 @@ here::i_am(
 
 
 f75 <- readRDS(here::here("Data/f75.rds"))
+config_list <- config::get()
 
 ## assume the censoring day is 10 day from birth 
 f75 %<>%
@@ -21,9 +22,14 @@ f75 %<>%
   )
 
 var_labels <- list(bfeeding = "Whether Breast Fed?",
-                   sex = "Baby's Gender")
+                   sex = "Baby's Gender",
+                   height = "Baby's Height")
 
-fit.cox <- coxph(Surv(time, status) ~ arm + site + sex + bfeeding, data = f75)
+covar <- c(config_list$parameter1, config_list$parameter2, config_list$parameter3)
+formula <- paste("Surv(time, status) ~", paste(covar, collapse = " + "))  
+
+
+fit.cox <- coxph(as.formula(formula), data = f75)
 p<- fit.cox %>%
   tbl_regression(exponentiate = TRUE, 
                  label = var_labels) %>%
