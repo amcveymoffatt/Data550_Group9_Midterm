@@ -1,4 +1,15 @@
 default:
-  parameter1: 
-  parameter2: 
-  parameter3: 
+  parameter1: "Female"
+  parameter2: "No"
+  
+gender:
+  parameter1: "Male"
+  parameter2: "No"
+
+breastfed:
+  parameter1: "Female"
+  parameter2: "Yes"
+
+gender_breastfed:
+  parameter1: "Male"
+  parameter2: "Yes"

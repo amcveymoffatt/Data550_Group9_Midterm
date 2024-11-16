@@ -15,8 +15,7 @@ library(knitr)
 opts_chunk$set(echo = FALSE,  warning = FALSE, message = FALSE)
 ```
 
-
-# Introduction
+## Introduction
 
 -   This is a RCT aims to compare mF75 with *currently recommended formulation of F75 among hospitalized children with SAM (Severe Malnutrition) in Kenya, Africa.*
 
@@ -24,14 +23,16 @@ opts_chunk$set(echo = FALSE,  warning = FALSE, message = FALSE)
 
 -   `arm2`: mF75(*modified F75 formula), with substantially reduced carbohydrate content and without lactose*
 
-# Baseline Table
+## Results
+
+### Baseline Table
 
 ```{r}
 baseline <- readRDS(here::here("Output/Baseline_characteristics.rds"))
 print(baseline)
 ```
 
-# Primary Outcome
+### Primary Outcome
 
 -   The primary outcome is time to *clinical stabilization among malnutrition infants, in which clinical stabilization refers to a child can progressing to higher protein and energy feeds to promote catch-up growth.*
 
@@ -40,11 +41,14 @@ print(baseline)
 -   The Hazard Ratio is adjusted by site, gender and and breastfeeding status, but found no statistical significant in the time to clinical stabilization between two arms.
 
 ```{r}
-readRDS(here::here("Output/primary_outcome.rds"))
-
+active_config <- Sys.getenv("WHICH_CONFIG")
+readRDS(paste0(here::here("Output/"), "primary_outcome_", active_config, ".rds"))
 ```
 
-# Secondary Outcome
+### Secondary Outcome
+
+-   The secondary outcome is time to *weight.*
+
 There was no observable difference in weight between the intervention group and the standard group.
 
 ```{r}
