@@ -11,8 +11,8 @@ knitr:
 ---
 
 ```{r, set-chunk-opts, echo = FALSE}
-library(knitr)opts_chunk$set(echo = FALSE,  warning = FALSE, message = FALSE
-)
+library(knitr)
+opts_chunk$set(echo = FALSE,  warning = FALSE, message = FALSE)
 ```
 
 
@@ -45,6 +45,7 @@ readRDS(here::here("Output/primary_outcome.rds"))
 ```
 
 # Secondary Outcome
+There was no observable difference in weight between the intervention group and the standard group.
 
 ```{r}
 knitr::include_graphics(here::here("Output/bar.png"))
