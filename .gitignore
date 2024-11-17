@@ -6,3 +6,6 @@ Data/*.Rds
 *.html
 .DS_Store
 .Rhistory
+Output/.DS_Store
+Code/.DS_Store
+Output/.DS_Store

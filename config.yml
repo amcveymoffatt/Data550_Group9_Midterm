@@ -1,15 +1,10 @@
 default:
-  parameter1: "Female"
-  parameter2: "No"
+  parameter1: "sex" 
+  parameter2: "bfeeding"
+  parameter3: "site"
   
-gender:
-  parameter1: "Male"
-  parameter2: "No"
+test:
+  parameter1: "sex"
+  parameter2: "height" 
+  parameter3: "site"
 
-breastfed:
-  parameter1: "Female"
-  parameter2: "Yes"
-
-gender_breastfed:
-  parameter1: "Male"
-  parameter2: "Yes"
