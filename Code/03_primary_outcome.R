@@ -27,13 +27,6 @@ var_labels <- list(bfeeding = "Whether Breast Fed?",
                    sex = "Baby's Gender",
                    height = "Baby's Height")
 
-##<<<<<<< HEAD
-##f75$sex <- relevel(as.factor(f75$sex), ref = config_list$parameter1)
-##f75$bfeeding <- relevel(as.factor(f75$bfeeding), ref = config_list$parameter2)
-
-
-##fit.cox <- coxph(Surv(time, status) ~ arm + site + sex + bfeeding, data = f75)
-##=======
 covar <- c(config_list$parameter1, config_list$parameter2, config_list$parameter3)
 formula <- paste("Surv(time, status) ~", paste(covar, collapse = " + "))  
 
@@ -50,6 +43,6 @@ p<- fit.cox %>%
   as_gt()
 
 
-saveRDS(p, paste0(here::here("Output/"),"primary_outcome_",active_config,".rds"))
+saveRDS(p, paste0(here::here("Output/"), "primary_outcome_", active_config,".rds"))
 print(Sys.getenv("WHICH_CONFIG"))
 

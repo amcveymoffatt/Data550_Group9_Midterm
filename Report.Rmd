@@ -47,7 +47,7 @@ readRDS(paste0(here::here("Output/"), "primary_outcome_", active_config, ".rds")
 
 ### Secondary Outcome
 
--   The secondary outcome is time to *weight.*
+-   The secondary outcome is *weight.*
 
 There was no observable difference in weight between the intervention group and the standard group.
 

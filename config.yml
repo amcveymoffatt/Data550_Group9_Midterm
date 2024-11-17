@@ -3,7 +3,7 @@ default:
   parameter2: "bfeeding"
   parameter3: "site"
   
-test:
+secondary:
   parameter1: "sex"
   parameter2: "height" 
   parameter3: "site"
