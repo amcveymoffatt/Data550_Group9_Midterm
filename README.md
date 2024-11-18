@@ -35,7 +35,7 @@ malnutrition: A double-blind, randomized controlled trial.*
 Two versions of the report can be generated. The cox model in table 3
 can be altered through the use of the `config.yml` file. Depending on
 the version, the second variable in the model will be either: 1.
-Breastfed Status 2. Height
+Breastfed Status 2. Primary Caregiver
 
 ### Requirements
 
@@ -51,7 +51,7 @@ Breastfed Status 2. Height
 2.  Set which version of the report to generate by running the following
     commands in the terminal
     1.  Breastfed Status: `export WHICH_CONFIG="default"`
-    2.  Height: `export WHICH_CONFIG="secondary"`
+    2.  Primary Caregiver: `export WHICH_CONFIG="secondary"`
 3.  Generate the final report
     1.  In the terminal run `Make report_${WHICH_CONFIG}.html`
 4.  Remove all files generated when running
