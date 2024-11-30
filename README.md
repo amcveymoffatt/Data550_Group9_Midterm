@@ -40,7 +40,8 @@ Breastfed Status 2. Primary Caregiver
 ### Requirements
 
 - `Packages`: Includes here, tidyverse, survival, and gtsummary.
-  - Missing packages are identified and installed in `01_load_data.R`
+  - Missing packages are identified and installed in `00_renv.R` using
+    the renv package.
 - `R`
 - `Make`
 - `Git` (optional)

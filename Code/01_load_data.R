@@ -1,9 +1,3 @@
-packages_list <- c("tidyverse", "here", "pacman", "DescTools",
-                      "magrittr", "janitor", "knitr", "survival", "ggpubr",
-                      "gt", "gtsummary", "tidyr", "dplyr", "ggplot2", "config")
-new_packages <- packages_list[!(packages_list %in% installed.packages()[,"Package"])]
-if(length(new_packages)) install.packages(new_packages)
-
 pacman::p_load(
   here, DescTools, tidyverse, magrittr, janitor,
   knitr, survival, ggpubr, gt, gtsummary, tidyr,
