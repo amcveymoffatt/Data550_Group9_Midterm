@@ -9,9 +9,9 @@ here::i_am(
   "Code/03_primary_outcome.R"
 )
 
-config_list <- config::get(config= Sys.getenv("WHICH_CONFIG"))
-active_config <- Sys.getenv("WHICH_CONFIG")
-
+active_config <- Sys.getenv("WHICH_CONFIG", unset = "default")
+config_list <- config::get(config = active_config)
+print(Sys.getenv("WHICH_CONFIG"))
 
 f75 <- readRDS(here::here("Data/f75.rds"))
 
@@ -44,5 +44,4 @@ p<- fit.cox %>%
 
 
 saveRDS(p, paste0(here::here("Output/"), "primary_outcome_", active_config,".rds"))
-print(Sys.getenv("WHICH_CONFIG"))
 

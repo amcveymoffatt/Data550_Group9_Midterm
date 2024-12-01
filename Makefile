@@ -9,7 +9,7 @@ install: Code/00_renv.R
 	Rscript Code/00_renv.R
 
 # Code/01_load_data.R: run load data code
-Data/f75.rds: Data/f75_interim.csv Code/01_load_data.R install
+Data/f75.rds: Data/f75_interim.csv Code/01_load_data.R install 
 	Rscript Code/01_load_data.R
 
 # baseline characteristic
