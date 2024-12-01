@@ -39,6 +39,6 @@ Two versions of the report can be generated. The cox model in table 3 can be alt
     1.  Breastfed Status: `export WHICH_CONFIG="default"`
     2.  Primary Caregiver: `export WHICH_CONFIG="secondary"`
 4.  Generate the final report
-    1.  In the terminal run `Make report_${WHICH_CONFIG}.html`
+    1.  In the terminal run `Make report_${WHICH_CONFIG}.html` or `Make`
 5.  Remove all files generated when running `Make report_${WHICH_CONFIG}.html`
     1.  In the terminal run `Make clean`
