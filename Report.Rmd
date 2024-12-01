@@ -41,7 +41,7 @@ knitr::kable(baseline)
 -   The Hazard Ratio is adjusted by site, gender and and breastfeeding status, but found no statistical significant in the time to clinical stabilization between two arms.
 
 ```{r}
-active_config <- Sys.getenv("WHICH_CONFIG")
+active_config <- Sys.getenv("WHICH_CONFIG", unset = "default")
 readRDS(paste0(here::here("Output/"), "primary_outcome_", active_config, ".rds"))
 ```
 

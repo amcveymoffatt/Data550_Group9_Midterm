@@ -1,6 +1,6 @@
 # will need to be updated with addition of code
-report_${WHICH_CONFIG}.html: Code/05_render_report.R Output/Baseline_characteristics.rds\
-Output/primary_outcome_${WHICH_CONFIG}.Rds Output/bar.png install
+report_${WHICH_CONFIG}.html: Code/05_render_report.R install Data/f75.rds Output/Baseline_characteristics.rds\
+Output/primary_outcome_${WHICH_CONFIG}.Rds Output/bar.png 
 	Rscript Code/05_render_report.R
 
 # Install R packages using renv
@@ -9,7 +9,7 @@ install: Code/00_renv.R
 	Rscript Code/00_renv.R
 
 # Code/01_load_data.R: run load data code
-Data/f75.rds: Data/f75_interim.csv Code/01_load_data.R install
+Data/f75.rds: Data/f75_interim.csv Code/01_load_data.R 
 	Rscript Code/01_load_data.R
 
 # baseline characteristic

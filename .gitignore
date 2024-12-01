@@ -9,3 +9,4 @@ Data/*.Rds
 Output/.DS_Store
 Code/.DS_Store
 Output/.DS_Store
+.Rproj.user

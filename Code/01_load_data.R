@@ -1,8 +1,4 @@
-pacman::p_load(
-  here, DescTools, tidyverse, magrittr, janitor,
-  knitr, survival, ggpubr, gt, gtsummary, tidyr,
-  dplyr, ggplot2, config)
-
+library(dplyr)
 here::i_am(
   "Code/01_load_data.R")
 

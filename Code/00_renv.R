@@ -1,6 +1,6 @@
-getwd()
-if(("renv" %in% row.names(installed.packages()))==FALSE) {
-  install.packages("renv")
-  renv::restore()} else {
-    renv::restore()
-    }
+if (!("renv" %in% row.names(installed.packages()))) {
+  install.packages("renv")  
+}
+
+renv::activate()
+renv::restore()  

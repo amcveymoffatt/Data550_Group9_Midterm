@@ -199,7 +199,7 @@ Baseline_characteristics <- rbind(Demographics, Age_in_months, Female, Primary_c
                                   Cerebral_palsy, Chronic_cough, Sickle_cell_disease,
                                   Congenial_or_acquired_heart_disease, HIV_positive, HIV_untested)
 
-print(Baseline_characteristics)
+# print(Baseline_characteristics)
 
 
 
