@@ -49,12 +49,13 @@ Breastfed Status 2. Primary Caregiver
 ### How to Generate Report
 
 1.  Clone the repository via Git or download via zip file
-2.  Set which version of the report to generate by running the following
+2.  Set working directory to the project directory
+3.  Set which version of the report to generate by running the following
     commands in the terminal
     1.  Breastfed Status: `export WHICH_CONFIG="default"`
     2.  Primary Caregiver: `export WHICH_CONFIG="secondary"`
-3.  Generate the final report
-    1.  In the terminal run `Make report_${WHICH_CONFIG}.html`
-4.  Remove all files generated when running
+4.  Generate the final report
+    1.  In the terminal run `Make report_${WHICH_CONFIG}.html` or `Make`
+5.  Remove all files generated when running
     `Make report_${WHICH_CONFIG}.html`
     1.  In the terminal run `Make clean`
