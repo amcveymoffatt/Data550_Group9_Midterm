@@ -1,11 +1,9 @@
 rm(list = ls())
 
-library(gt)
-library(gtsummary)
-library(survival)
-library(dplyr)
-library(tidyr)
-library(magrittr)
+pacman::p_load(
+  here, DescTools, tidyverse, magrittr, janitor,
+  knitr, survival, ggpubr, gt, gtsummary
+)
 
 here::i_am(
   "Code/03_primary_outcome.R"
@@ -13,6 +11,7 @@ here::i_am(
 
 active_config <- Sys.getenv("WHICH_CONFIG", unset = "default")
 config_list <- config::get(config = active_config)
+print(Sys.getenv("WHICH_CONFIG"))
 
 f75 <- readRDS(here::here("Data/f75.rds"))
 
