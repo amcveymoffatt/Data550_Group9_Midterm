@@ -11,7 +11,9 @@ here::i_am(
 
 active_config <- Sys.getenv("WHICH_CONFIG", unset = "default")
 config_list <- config::get(config = active_config)
-print(Sys.getenv("WHICH_CONFIG"))
+print(
+  paste("The active config is", Sys.getenv("WHICH_CONFIG", unset = "default"), sep = " ")
+  )
 
 f75 <- readRDS(here::here("Data/f75.rds"))
 

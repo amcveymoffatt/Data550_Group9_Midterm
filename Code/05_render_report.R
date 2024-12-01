@@ -5,7 +5,7 @@ config_list <- config::get(
   config= Sys.getenv("WHICH_CONFIG")
 )
 
-active_config <- Sys.getenv("WHICH_CONFIG")
+active_config <- Sys.getenv("WHICH_CONFIG", unset = "default")
 #rmarkdown::render(here::here("Report.Rmd"))
 
 rmarkdown::render(
